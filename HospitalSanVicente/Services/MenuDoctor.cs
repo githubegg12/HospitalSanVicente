@@ -17,19 +17,24 @@ public class MenuDoctor
             {
                 case "1":
                     // Menu for doctor registration
+                    MainMenuView.Pause();
+
                     break;
                 
                 case "2":
                     // Menu for List
+                    MainMenuView.Pause();
                     break;
                 
                 case "3":
                     // Menu for  Update
+                    MainMenuView.Pause();
                     break;
                  
                 case "4":
                     exit = true;
                     Console.WriteLine("\nBack to main menu...");
+                    MainMenuView.Pause();
                     MainMenuView.ShowMainMenu();
                     break;
 

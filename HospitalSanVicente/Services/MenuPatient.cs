@@ -16,20 +16,34 @@ public class MenuPatient
             switch (option)
             {
                 case "1":
-                    // Menu for patient registration
+                    PatientService.RegisterPatientFromConsole();
+                    MainMenuView.Pause();
                     break;
                 
                 case "2":
-                    // Menu for List
+                    PatientService.ListPatients();
+                    MainMenuView.Pause();
                     break;
                 
                 case "3":
-                    // Menu for  Update
+                    PatientService.SearchPatientByDocumentIdFromConsole();
+                    MainMenuView.Pause();
                     break;
                 
                 case "4":
+                    PatientService.UpdatePatientFromConsole();
+                    MainMenuView.Pause();
+                    break;
+                
+                case "5":
+                    PatientService.DeletePatientFromConsole();
+                    MainMenuView.Pause();
+                    break;
+                
+                case "6":
                     Console.WriteLine("\nBack to main menu...");
                     exit = true;
+                    MainMenuView.Pause();
                     MainMenuView.ShowMainMenu();
                     break;
 

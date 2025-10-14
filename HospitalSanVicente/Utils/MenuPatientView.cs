@@ -12,7 +12,7 @@ public class MenuPatientView
         Console.WriteLine("3. Patient Search");
         Console.WriteLine("4. Patient Update");
         Console.WriteLine("5. Delete Patient");
-        Console.WriteLine("10. Back to Main Menu\n");
+        Console.WriteLine("6. Back to Main Menu\n");
         
         Console.Write("Select an option (1-10): ");
     }

@@ -5,11 +5,10 @@ public class Patient : Person
     private DateOnly _birthDate;
     private string _medicalRecordNumber;
 
-    public Patient(string firstName, string lastName, int documentID, string phoneNumber, string email, DateOnly birthDate, string medicalRecordNumber)
+    public Patient(string firstName, string lastName, int documentID, string phoneNumber, string email, DateOnly birthDate)
         : base(firstName, lastName, documentID, phoneNumber, email)
     {
         BirthDate = birthDate;
-        MedicalRecordNumber = medicalRecordNumber;
     }
 
     public DateOnly BirthDate
@@ -21,17 +20,7 @@ public class Patient : Person
                 _birthDate = value;
         }
     }
-
-    public string MedicalRecordNumber
-    {
-        get => _medicalRecordNumber;
-        set
-        {
-            if (!string.IsNullOrWhiteSpace(value))
-                _medicalRecordNumber = value;
-        }
-    }
-
+    
     // Read-only property that calculates the patient's age in years
     public int Age
     {
