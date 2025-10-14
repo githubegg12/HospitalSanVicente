@@ -8,6 +8,7 @@ public class DoctorRepository : ICreate<Doctor>, IRead<Doctor>, IUpdate<Doctor>,
 {
     private readonly Database _database;
 
+    // Constructor injects the Database instance
     public DoctorRepository(Database database)
     {
         _database = database;
@@ -26,7 +27,7 @@ public class DoctorRepository : ICreate<Doctor>, IRead<Doctor>, IUpdate<Doctor>,
         return _database.Doctors;
     }
 
-    // Get doctor by GUID string id
+    // Get doctor by GUID id (string)
     public Doctor? GetById(string id)
     {
         if (!Guid.TryParse(id, out var guid))
@@ -35,7 +36,7 @@ public class DoctorRepository : ICreate<Doctor>, IRead<Doctor>, IUpdate<Doctor>,
         return _database.Doctors.FirstOrDefault(d => d.Id == guid);
     }
 
-    // Update doctor info by id
+    // Update doctor info by GUID id
     public void Update(string id, Doctor doctor)
     {
         if (!Guid.TryParse(id, out var guid))
@@ -48,12 +49,18 @@ public class DoctorRepository : ICreate<Doctor>, IRead<Doctor>, IUpdate<Doctor>,
         }
     }
 
-    // Delete doctor by id
+    // Remove doctor by GUID id
     public void Delete(string id)
     {
         if (!Guid.TryParse(id, out var guid))
             return;
 
         _database.Doctors.RemoveAll(d => d.Id == guid);
+    }
+
+    // Get doctor by DocumentID (int)
+    public Doctor? GetByDocumentId(int documentId)
+    {
+        return _database.Doctors.FirstOrDefault(d => d.DocumentID == documentId);
     }
 }

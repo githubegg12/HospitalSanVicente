@@ -16,22 +16,37 @@ public class MenuDoctor
             switch (option)
             {
                 case "1":
-                    // Menu for doctor registration
+                    //Registration
+                    DoctorService.RegisterDoctorFromConsole();
                     MainMenuView.Pause();
 
                     break;
                 
                 case "2":
-                    // Menu for List
+                    //List
+                    DoctorService.ListDoctors();
                     MainMenuView.Pause();
                     break;
                 
                 case "3":
-                    // Menu for  Update
+                    //Search
+                    DoctorService.SearchDoctorByDocumentIdFromConsole();
+                    MainMenuView.Pause();
+                    break;
+                
+                case "4":
+                    //Update
+                    DoctorService.UpdateDoctorFromConsole();
+                    MainMenuView.Pause();
+                    break;
+                
+                case "5":
+                    //Delete
+                    DoctorService.DeleteDoctorFromConsole();
                     MainMenuView.Pause();
                     break;
                  
-                case "4":
+                case "6":
                     exit = true;
                     Console.WriteLine("\nBack to main menu...");
                     MainMenuView.Pause();

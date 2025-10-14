@@ -12,7 +12,7 @@ public class MenuAppointmentView
         Console.WriteLine("3. Appointment Search");
         Console.WriteLine("4. Appointment Update");
         Console.WriteLine("5. Cancel Appointment");
-        Console.WriteLine("10. Back to Main Menu\n");
+        Console.WriteLine("6. Back to Main Menu\n");
     
         Console.Write("Select an option (1-10): ");
     }

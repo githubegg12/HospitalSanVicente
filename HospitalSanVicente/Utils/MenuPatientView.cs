@@ -14,6 +14,6 @@ public class MenuPatientView
         Console.WriteLine("5. Delete Patient");
         Console.WriteLine("6. Back to Main Menu\n");
         
-        Console.Write("Select an option (1-10): ");
+        Console.Write("Select an option (1-6): ");
     }
 }

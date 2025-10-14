@@ -12,8 +12,8 @@ public class MenuDoctorView
         Console.WriteLine("3. Doctor Search");
         Console.WriteLine("4. Doctor Update");
         Console.WriteLine("5. Delete Doctor");
-        Console.WriteLine("10. Back to Main Menu\n");
+        Console.WriteLine("6. Back to Main Menu\n");
     
-        Console.Write("Select an option (1-10): ");
+        Console.Write("Select an option (1-6): ");
     }
 }

@@ -5,7 +5,7 @@ public class Doctor : Person
     private string _specialty;
 
     // Constructor
-    public Doctor(string firstName, string lastName, int documentID, string phoneNumber, string email, string licenseNumber, string specialty)
+    public Doctor(string firstName, string lastName, int documentID, string phoneNumber, string email, string specialty)
         : base(firstName, lastName, documentID, phoneNumber, email)
     {
         Specialty = specialty;
