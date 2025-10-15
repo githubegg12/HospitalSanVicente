@@ -27,7 +27,7 @@ Follow these steps to get the project up and running on your local machine.
 ### 2. Clone the Repository
 
 ```sh
-git clone <your-repository-url>
+git clone https://github.com/githubegg12/HospitalSanVicente.git
 cd HospitalSanVicente
 ```
 
