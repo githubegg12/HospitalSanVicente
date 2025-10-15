@@ -61,6 +61,7 @@ public class PatientService
             if (patient != null)
             {
                 Console.WriteLine("Patient registered successfully!");
+                EmailService.SendPatientRegistrationConfirmation(patient);
             }
             else
             {
@@ -259,4 +260,3 @@ public class PatientService
         }
     }
 }
-

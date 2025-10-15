@@ -4,7 +4,7 @@ public class MenuDoctorView
 {
     public static void ShowDoctorMenu()
     {
-        Console.WriteLine("====================================");
+        Console.WriteLine("\n====================================");
         Console.WriteLine("         Hospital San Vicente");
         Console.WriteLine("====================================\n");
         Console.WriteLine("1. Doctor Registration");

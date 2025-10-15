@@ -4,7 +4,7 @@ public class MenuAppointmentView
 {
     public static void ShowAppointmentMenu()
     {
-        Console.WriteLine("====================================");
+        Console.WriteLine("\n====================================");
         Console.WriteLine("         Hospital San Vicente");
         Console.WriteLine("====================================\n");
         Console.WriteLine("1. Create Appointment");

@@ -61,6 +61,7 @@ public class DoctorService
             if (doctor != null)
             {
                 Console.WriteLine("Doctor registered successfully!");
+                EmailService.SendDoctorRegistrationConfirmation(doctor);
             }
             else
             {

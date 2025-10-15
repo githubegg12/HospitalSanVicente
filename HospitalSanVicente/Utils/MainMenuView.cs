@@ -5,7 +5,7 @@ public class MainMenuView
     public static void ShowMainMenu()
     {
         Console.Clear();
-        Console.WriteLine("====================================");
+        Console.WriteLine("\n====================================");
         Console.WriteLine("         Hospital San Vicente");
         Console.WriteLine("====================================\n");
 
